@@ -16,7 +16,7 @@ header {
 
 /* 
 What happens when we set the display property to flex? 
-TODO: Write your answer here 
+display flex makes the container a flexible object, meaning it will activate other flex properties
 */
 nav {
   display: flex;
@@ -32,7 +32,7 @@ nav a {
 
 /* 
 What is the flex-wrap property? 
-TODO: Write your answer here 
+flex-wrap prevents the containers from shrinking when they overflow the webpage width, and add them onto the next row instead
 */
 main {
   display: flex;
@@ -49,9 +49,12 @@ aside {
 /* 
 What does the flex-shrink property specify?
 What is doing here? 
-TODO: Write your answer here 
+flex-shrink specifies how much smaller the object will be relative to the other flexible items of the same parent
+flex-shrink 0 means the footer will shrink relative to other objects of the same container at the same rate,
+but it is the only aspect in it's container so there is no visible change
 */
 footer {
+  display: flex;
   flex-shrink: 0;
   padding: 20px;
   text-align: center;
@@ -61,7 +64,7 @@ footer {
 
 /* 
 What does the justify-content property do? 
-TODO: Write your answer here 
+justify-content sets the rule for horizontal positionality, though this is vertical if a reverse is used in, for example, flex-flow
 */
 .products {
   flex: 4;
@@ -75,7 +78,7 @@ TODO: Write your answer here
 /* 
 What is the flex property a shorthand property for?
 What is it doing here? 
-TODO: Write your answer here 
+flex is shorthand for flex-grow, flex-shrink, and flex-basis. it sets the initial length for cards so long as they have flex properties
 */
 .card {
   border-style: solid;
@@ -100,7 +103,7 @@ TODO: Write your answer here
 /* 
 What does the flex-direction property define?
 What is it doing here? 
-TODO: Write your answer here 
+flex-direction column sets main and nav tags to stack on top of each other vertically when max-width falls under 768px
 */
 @media screen and (max-width: 768px) {
   main,

@@ -87,11 +87,20 @@ footer {
   color: #fff;
 }
 
+.showme {
+  display: none;
+}
+
+
 /* TODO: Add styles to display and hide the resource links */
+.resources:hover .showme {
+  display: block;
+}
 
 @media screen and (max-width: 768px) {
   header, main {
     flex-direction: column;
+    
   }
 
   section {
